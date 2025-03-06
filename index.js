@@ -62,5 +62,5 @@ document.getElementById("submit").onclick = function(){
     radius = Number(radius);
     circumference = 2 * PI * radius;
     document.getElementById("output").textContent = circumference;
-}
+};
 
