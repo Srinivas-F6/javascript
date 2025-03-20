@@ -12,6 +12,6 @@ submitbtn.onclick = function(){
         output.innerHTML = `<img src="https://info.aec.edu.in/ACET/StudentPhotos/${rollno}.jpg">`;
     }
     else{
-        alert("select the collage")
+        alert("select the collage");
     }
 }
