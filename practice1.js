@@ -107,27 +107,183 @@ console.log(namee.slice(0,7));
 //      rest = bundles seperate elements into array
 
 
-function addGuns(...guns){
-    console.log(guns);
-}
-let gun1 = 'M416';
-let gun2 = 'AKM';
-let gun3 = 'AWM';
-let gun4 = 'MG3';
+// function addGuns(...guns){
+//     console.log(guns);
+// }
+// let gun1 = 'M416';
+// let gun2 = 'AKM';
+// let gun3 = 'AWM';
+// let gun4 = 'MG3';
 
-addGuns(gun1,gun2,gun3,gun4);
+// addGuns(gun1,gun2,gun3,gun4);
 
 
-function combineStr(...string){
-    return string.join(" ");
-}
+// function combineStr(...string){
+//     return string.join(" ");
+// }
 
-let s1 = 'I am';
-let s2 = 'Srinivas';
-let s3 = 'From';
-let s4 = 'Erangel';
+// let s1 = 'I am';
+// let s2 = 'Srinivas';
+// let s3 = 'From';
+// let s4 = 'Erangel';
 
-const output = combineStr(s1,s2,s3,s4);
-console.log(output);
+// const output = combineStr(s1,s2,s3,s4);
+// console.log(output);
+
+
+// call backs in javascript
+// call back = a function that is passed as an arguement to another function
+            
+    //  used to handle asynchrous operations       
+    //  1.reading a file
+    //  2.Network requests
+    //  3.interacting with databases
+
+
+// summ(display,10,82);
+// function summ(callback, x, y){
+//     let res = x+y;
+//     callback(res);
+// }
+// function display(result){
+//     console.log(result);
+// }
+
+
+
+// for each Loop...
+// array.forEach(callback)   -->element , index, array are provided
+
+// let nums = [1,4,3,5,432,343,23];
+// nums.forEach(square);
+// nums.forEach(addingNum);
+
+// function addingNum(element){
+//     console.log(element);
+// }
+
+
+// function square(ele,index,array){
+//   array[index] = ele*ele;
+// }
+
+
+
+// map()  = accepts a callback and applies that function to each element of an array, then return a new array
+
+// const  nums = [1,2,3,4,5];
+// const output = nums.map(square);
+// console.log(output);
+
+// function square(num){
+//     return Math.pow(num,2);
+// }
+
+
+
+// const students = ['sisis','canvvis','lanuien','ulemina'];
+// const output = students.map(upperCase);
+// console.log(output);
+
+// function upperCase(strg){
+//     return strg.charAt(0).toUpperCase()+strg.slice(1);
+// }
+
+// const dates = ['2022-9-22','2024-8-28','2019-7-28'];
+// const newdateformat = dates.map(newdates);
+// console.log(newdateformat);
+// function newdates(date){
+//     const d = date.split("-");
+//     return `${d[2]}/${d[1]}/${d[0]}`
+// }
+
+
+// filter() = creates a new array by filtering out elements
+
+// let nums = [1,2,3,4,5,6,7,778];
+
+// const evennums = nums.filter(evenNums);
+// console.log(evennums);    //2,4,6,778
+
+// function evenNums(nums){
+//     return nums%2===0
+// }
+
+
+// let ages = [18,38,47,9,17,6]
+// const castvotes = ages.filter(above);
+// const notcast = ages.filter(below);
+
+// console.log(castvotes);
+// console.log(notcast);
+
+// function above(age){
+//      return age>17;
+// }
+// function below(age){
+//     return age<18;
+// }
+
+
+// Reduce() = reduce the elements of an array to a single value
+
+// const prices = [10,49,28,929];
+// const tsum = prices.reduce(sum);
+// console.log(tsum);
+
+// function sum(previous,next){          //sum(10,49)      sum(59,28)
+//     return previous+next;             // 10+49          //59+28
+// }
+
+
+// const marks = [93,84,92,93,84,99];
+// const highestmarks = marks.reduce(maxmarks);
+// console.log(highestmarks);
+
+// function maxmarks(prev,next){
+//     return Math.max(prev,next);
+// }
+
+
+// funciton expression = a way to define functions as values or variables
+// function declaration = define a reusable block of code that perform a specific task
+
+// setTimeout(function(){
+//     console.log('Helllo');
+// },3000);
+
+// const nums = [33,328,3,5,5,7,8,9,10];
+
+// const squares = nums.map(function (ele){
+//     return ele*ele;
+// });
+// console.log(squares);
+
+
+// let nums = [10,9,4,23,56,7,687,9,543,35,243,8534];
+
+// const evennums = nums.filter(function(numse){
+//       return numse%2==0;
+// });
+// console.log(evennums);
+
+
+// Arrow Functions: A concise way to write function expressions good for simple functions that you use only once
+            // (parameters)=>block of code
+
+let names = ['patrick','joe','dia','santer','misse'];
+
+const change = names.map((ele) => ele.charAt(0).toUpperCase());
+
+console.log(change)
+
+
+
+
+
+
+
+
+
 
 
