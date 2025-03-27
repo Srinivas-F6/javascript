@@ -9,18 +9,18 @@
 </head>
 <body>
     <div class="container">
-    <h1>Enter the RollNo</h1>
-    <input id="rollno" type="text" placeholder="Roll Number">
+        <h1>Enter the RollNo</h1>
+        <input id="rollno" type="text" placeholder="Roll Number">
 
-    <input type="radio" id="aec" name="college">
-    <label for="acet">Aditya Engineering College</label>
+        <label for="college">Select your College:</label>
+        <select id="college" name="college">
+            <option value="aec">Aditya Engineering College</option>
+            <option value="acet">Aditya College of Engineering And Technology</option>
+            <option value="poly">Polytechnic College</option>
+        </select>
 
-    <input type="radio" id="acet" name="college">
-    <label for="acet">Aditya college of Engineering And Technology</label>
-
-
-    <button type="button" id="submitbtn">Enter</button>
-    <div id="imge"></div>
+        <button type="button" id="submitbtn">Enter</button>
+        <div id="imge"></div>
     </div>
     <script src="rollno.js"></script>
 </body>
