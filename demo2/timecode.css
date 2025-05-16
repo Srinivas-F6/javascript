@@ -1,0 +1,61 @@
+/*  DIGITAL CLOCK
+body{
+    background: linear-gradient(to right, yellow, green);
+    margin: 0;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+#clock{
+    font-size: 4.9em;
+    font-family: monospace;
+    font-weight: bolder;
+}
+*/
+
+/* Calculator */
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(20, 18, 1);
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+#display{
+   width: 100%;
+   padding: 20px;
+   text-align: left;
+   border: none;
+   font-size: 5rem;
+   background-color: hsl(0, 0%, 20%);
+   color: white;
+
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 10px;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px groove black;
+    color: white;
+    background-color: gray;
+    font-size: 3rem;
+}

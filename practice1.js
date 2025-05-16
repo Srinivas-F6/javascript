@@ -23,7 +23,9 @@ console.log(num.padStart(19,"0"));       //000820329-893=382-3
 let namee = 'Slicing string';
 console.log(namee.slice(0,7));
 
-
+let s = 'iam a human being    uuuu';
+let words = s.split(" ");
+console.log(words);
 // === is a strict equality(used for values and data types
 
 // const PI = 3.14;
@@ -69,6 +71,7 @@ console.log(namee.slice(0,7));
 // games.unshift('Basketball') //push the element at the starting position of the array
 // games.shift();  //used to pop the elements at the starting position of the array.
 
+
 // console.log(games);
 // console.log(games.length);
 // console.log(games.indexOf('Kabbadi'));
@@ -77,6 +80,7 @@ console.log(namee.slice(0,7));
 // for(let game of games){
 //     console.log(game);
 // }
+
 
 // games.sort();      //games.sort().reverse();
 // console.log(games);
@@ -90,15 +94,16 @@ console.log(namee.slice(0,7));
 // let numbers = [1,6,43,3,2,232,234]
 // console.log(Math.max(numbers));    //output is :NaN
 // console.log(Math.max(...numbers));  //234--here spread operator is used for expanded the array into seperate elements.
+   
 
 // let nameq = 'Srinivas';
 // console.log([...nameq].join("->"));
 
-// let nums = [1,2,4,3,5,6,7,8,9];
+// let numss = [1,2,4,3,5,6,7,8,9];
 // let chars = ['a','b','c','d','e','f'];
 
-// let isdigitchar = [...nums,...chars];
-// console.log(isdigitchar);
+// let isdigitchar = [...numss,...chars];
+//   document.writeln(isdigitchar);
 
 
 
@@ -108,14 +113,15 @@ console.log(namee.slice(0,7));
 
 
 // function addGuns(...guns){
-//     console.log(guns);
+//       document.writeln(guns);
 // }
 // let gun1 = 'M416';
 // let gun2 = 'AKM';
 // let gun3 = 'AWM';
 // let gun4 = 'MG3';
-
+// let gun5 = 'MG3';
 // addGuns(gun1,gun2,gun3,gun4);
+
 
 
 // function combineStr(...string){
@@ -237,12 +243,11 @@ console.log(namee.slice(0,7));
 
 
 // const marks = [93,84,92,93,84,99];
-// const highestmarks = marks.reduce(maxmarks);
-// console.log(highestmarks);
-
-// function maxmarks(prev,next){
-//     return Math.max(prev,next);
+// const highestmarks = marks.reduce(function (prev,next){
+//     return prev+next;
 // }
+// );
+// console.log(highestmarks);
 
 
 // funciton expression = a way to define functions as values or variables
@@ -271,11 +276,59 @@ console.log(namee.slice(0,7));
 // Arrow Functions: A concise way to write function expressions good for simple functions that you use only once
             // (parameters)=>block of code
 
-let names = ['patrick','joe','dia','santer','misse'];
+/* let names = ['patrick','joe','dia','santer','misse'];
 
 const change = names.map((ele) => ele.charAt(0).toUpperCase());
 
 console.log(change)
+
+let nums = [933,933,494,5,394,932];
+
+const outut = nums.reduce(function(prev,next){
+    return next+prev;
+});
+
+const outut = nums.map((ele) => ele*3);
+const even = nums.filter((ele)=>ele%2==0);
+console.log(even);   */
+
+let nums = [20,30,50,60];
+let output = nums.reduce((prev,next)=>{
+    return prev+next;
+})
+console.log(output)
+
+/*
+   Objects  = A collection of related properities and/or methods Can represent 
+   real world objects like(people, car, bus)
+   object = {key: value} 
+*/
+
+// const person = {
+//    firstname :"Goru",
+//    lastname : "srinivas",
+//    age : 20,
+//    phn_num : "9505691379"
+// };
+
+// console.log(person.firstname);
+// console.log(person["age"]);
+
+// const person1 = {
+//     firstname : 'Mike',
+//     lastname : 'TYson',
+//     age : 50,
+//     fullname : function(){
+//         return this.firstname+" "+this.lastname;
+//     }
+// };
+
+// console.log(person1.fullname());
+
+
+
+
+
 
 
 
